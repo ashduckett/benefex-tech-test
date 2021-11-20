@@ -1,0 +1,319 @@
+.header {
+  font-size: 1.9rem;
+}
+.header__image {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+.header__bottom-row {
+  height: 200px;
+  background: red;
+  display: flex;
+}
+.header__bottom-row:nth-child(2) .header__bottom-row__left {
+  background: #77f3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bottom-row:nth-child(2) .header__bottom-row__left__img {
+  width: 40%;
+}
+.header__bottom-row:nth-child(2) .header__bottom-row__right {
+  background: #5e04df;
+}
+.header__bottom-row:nth-child(3) .header__bottom-row__left {
+  background: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bottom-row:nth-child(3) .header__bottom-row__left__list {
+  color: white;
+  display: inline-block;
+  list-style-type: none;
+  width: 70%;
+}
+.header__bottom-row:nth-child(3) .header__bottom-row__left__list__sublist {
+  list-style-type: none;
+}
+.header__bottom-row:nth-child(3) .header__bottom-row__right {
+  background: #ba72ef;
+}
+.header__bottom-row__left {
+  width: 20%;
+  height: 100%;
+}
+.header__bottom-row__right {
+  color: white;
+  width: 80%;
+  height: 100%;
+  padding: 3rem;
+}
+.header__bottom-row__right__header-text {
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .header {
+    font-size: 1.6rem !important;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .header {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 790px) {
+  body .header__bottom-row {
+    height: auto;
+  }
+  body .header__bottom-row:nth-child(2) .header__bottom-row__left, body .header__bottom-row:nth-child(3) .header__bottom-row__left {
+    display: none;
+  }
+  body .header__bottom-row:nth-child(2) .header__bottom-row__right, body .header__bottom-row:nth-child(3) .header__bottom-row__right {
+    width: 100%;
+  }
+}
+.disclaimer {
+  padding: 3rem;
+  background-color: #dfdfdf;
+}
+.disclaimer__header {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.disclaimer__header::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+.disclaimer__text {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.ready-steady {
+  font-size: 1.9rem;
+}
+.ready-steady__split-row {
+  display: flex;
+  margin-top: 6rem;
+}
+.ready-steady__split-row__image {
+  width: 50%;
+  display: block;
+}
+.ready-steady__split-row__image img {
+  width: 100%;
+  display: block;
+}
+.ready-steady__split-row__text {
+  width: 50%;
+  padding: 3rem;
+  background-color: #77f3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ready-steady__split-row__text__button {
+  text-align: center;
+}
+.ready-steady__split-row__text__header {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.ready-steady__split-row__text__text {
+  margin-bottom: 1.5rem;
+}
+.ready-steady__split-row__text__register {
+  margin-bottom: 2rem;
+}
+.ready-steady__text-with-image-row {
+  display: flex;
+}
+.ready-steady__text-with-image-row__text {
+  width: 75%;
+  padding: 4.5rem;
+}
+.ready-steady__text-with-image-row__text__header {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.ready-steady__text-with-image-row__text__text {
+  color: #5e04df;
+}
+.ready-steady__text-with-image-row__image {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4.5rem;
+}
+.ready-steady__text-with-image-row__image img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .ready-steady {
+    font-size: 1.6rem !important;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .ready-steady {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .ready-steady__split-row {
+    flex-direction: column;
+  }
+  .ready-steady__split-row__image, .ready-steady__split-row__text {
+    width: 100%;
+  }
+  .ready-steady__text-with-image-row__image {
+    display: none;
+  }
+  .ready-steady__text-with-image-row__text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .free-course {
+    display: none;
+  }
+}
+.financial-mot {
+  font-size: 1.9rem;
+  padding-top: 3.5rem;
+}
+.financial-mot__btn-container {
+  text-align: center;
+}
+.financial-mot .btn {
+  margin-top: 1.5rem;
+}
+.financial-mot h2, .financial-mot h3 {
+  text-align: center;
+}
+.financial-mot h2 {
+  font-size: 6rem;
+  color: #5e04df;
+}
+.financial-mot h3 {
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+}
+.financial-mot__icon-item-row {
+  display: flex;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+.financial-mot__icon-item-row__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+}
+.financial-mot__icon-item-row__item p {
+  width: 50%;
+  text-align: center;
+}
+.financial-mot__icon-item-row__item__image {
+  display: block;
+}
+.financial-mot__split-text {
+  display: flex;
+  padding: 6rem 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.financial-mot__split-text__section {
+  padding: 0 1.5rem;
+}
+.financial-mot__split-text__section__header {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.financial-mot__split-text__section__main {
+  color: #5e04df;
+}
+
+@media only screen and (max-width: 700px) {
+  .financial-mot__icon-item-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .financial-mot__icon-item-row__item {
+    width: 100%;
+  }
+  .financial-mot__split-text {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .financial-mot {
+    font-size: 1.6rem !important;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .financial-mot {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .financial-mot h2 {
+    font-size: 5rem;
+  }
+  .financial-mot h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .financial-mot h2 {
+    font-size: 4rem;
+  }
+  .financial-mot h3 {
+    font-size: 2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #5e04df;
+  padding: 0.7rem 3rem;
+  display: inline-block;
+  border-radius: 8px;
+  color: white;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */

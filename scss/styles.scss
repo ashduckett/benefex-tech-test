@@ -1,0 +1,37 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'disclaimer.scss';
+@import 'readysteady.scss';
+@import 'financialMot.scss';
+
+// Standard browser reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // Get 1rem equal to 10px so it's easier to work with
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+// General
+.btn {
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: $dark-purple;
+    padding: 0.7rem 3rem;
+    display: inline-block;
+    border-radius: 8px;
+    color: white;
+}
+
+.bold-text {
+    font-weight: bold;
+}

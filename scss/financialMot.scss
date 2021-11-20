@@ -1,0 +1,127 @@
+// For separate file
+.financial-mot {
+    font-size: $standard-font-size;
+
+    &__btn-container {
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 1.5rem;
+    
+        
+    }
+
+    padding-top: 3.5rem;
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 6rem;
+        color: $dark-purple;
+    }
+
+    h3 {
+        font-size: 4rem;
+        margin-bottom: 3.5rem;
+        
+    }
+
+    &__icon-item-row {
+        display: flex;
+        padding-bottom: 3.5rem;
+        border-bottom: 1px solid $border-colour;
+        &__item {
+            p {
+                // font-size: 2rem;
+                width: 50%;
+
+                text-align: center;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33.33%;
+
+            &__image {
+                display: block;
+            }
+        }
+    }
+
+    &__split-text {
+        display: flex;
+        padding: 6rem 0;
+        border-bottom: 1px solid $border-colour;
+
+        &__section {
+            padding: 0 1.5rem;
+            &__header {
+                font-weight: bold;
+                margin-bottom: 1.5rem;
+            }
+
+            &__main {
+                color: $dark-purple;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .financial-mot {
+        &__icon-item-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+
+            &__item {
+                width: 100%;
+            }
+        }
+
+        &__split-text {
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .financial-mot {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .financial-mot {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .financial-mot {
+        h2 {
+            font-size: 5rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .financial-mot {
+        h2 {
+            font-size: 4rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}

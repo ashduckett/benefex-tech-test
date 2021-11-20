@@ -1,0 +1,107 @@
+.header {
+    font-size: $standard-font-size;
+    &__image {
+        width: 100%;
+        display: block; // Kill any whitespace that comes with having an inline element.#
+        margin-bottom: 1rem;
+    }
+
+    &__bottom-row {
+        height: 200px;
+        background: red;
+        display: flex;
+        
+
+        &:nth-child(2) {
+            .header__bottom-row__left {
+                background: rgb(119, 243, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__img {
+                    width: 40%;
+                }
+            }
+            
+            .header__bottom-row__right {
+                background: $dark-purple;
+            }
+        }
+
+        &:nth-child(3) {
+            .header__bottom-row__left {
+                background: rgb(42, 42, 42);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__list {
+                    color: white;
+                    display: inline-block;
+                    list-style-type: none;
+                    width: 70%;
+
+                    &__sublist {
+                        list-style-type: none;
+                    }
+                }
+            }
+
+            .header__bottom-row__right {
+                background: rgb(186, 114, 239);
+                
+            }
+
+            
+        }
+
+        &__left {
+            width: 20%;
+            height: 100%;
+        }
+
+        &__right {
+            color: white;
+            width: 80%;
+            height: 100%;
+            padding: 3rem;
+
+            &__header-text {
+                font-weight: bold;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+// at 1050 set standard font size to 1.6
+@media only screen and (max-width: 1050px) {
+    .header {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .header {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    body {
+        .header {
+            &__bottom-row {
+                height: auto;
+                &:nth-child(2), &:nth-child(3) {
+                    .header__bottom-row__left {
+                        display: none;
+                    }
+                    .header__bottom-row__right {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
